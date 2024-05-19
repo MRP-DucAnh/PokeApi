@@ -3,12 +3,13 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 
 //    //Room
-    kotlin("kapt")
+//    kotlin("kapt")
 //    id("androidx.navigation.safeargs.kotlin")
 //
 //    //parcelize for Parcelable (optional)
 //    id("kotlin-parcelize")
-//    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -68,9 +69,17 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-//    // Retrofit
-//    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
-//    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+
+    //    // Dagger-Hilt
+    implementation("com.google.dagger:hilt-android:$hiltVersion")
+    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
+
+        // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
+
 //
 //    // Navigation Components
 //    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
@@ -90,13 +99,7 @@ dependencies {
 //    kapt("androidx.room:room-compiler:$roomVersion")
 //    implementation("androidx.room:room-ktx:$roomVersion") // Support for Coroutines with Room
 //
-//    // Coroutines
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
-//
-//    // Dagger-Hilt
-//    implementation("com.google.dagger:hilt-android:$hiltVersion")
-//    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
-//
+
     // Glide
     implementation("com.github.bumptech.glide:glide:$glideVersion")
     kapt("com.github.bumptech.glide:compiler:$glideVersion")
@@ -104,4 +107,9 @@ dependencies {
 //    // Circular Imgview
 //    implementation("com.mikhaellopez:circularimageview:4.2.0")
 
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

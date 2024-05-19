@@ -3,8 +3,8 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.jetbrains.kotlin.android) apply false
 
-//    //add the hilt-android-gradle-plugin plugin to your project's root build.gradle file:
-//    id("com.google.dagger.hilt.android") version "2.44" apply false
+    //add the hilt-android-gradle-plugin plugin to your project's root build.gradle file:
+    id("com.google.dagger.hilt.android") version "2.44" apply false
 //    id ("androidx.navigation.safeargs") version "2.5.0" apply false
 }
 
