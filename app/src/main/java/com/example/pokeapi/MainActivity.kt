@@ -18,5 +18,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-git config --global user.email "leducanh51501@gmail.com"
-git config --global user.name "Pear"
+
