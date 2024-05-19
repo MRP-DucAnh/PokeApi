@@ -1,9 +1,58 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PokeApi" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/pokemon_dark_red</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:editTextColor">@color/white</item>
+
+
+        <item name="fontFamily">@font/pokemon_card_font</item>
     </style>
 
     <style name="Theme.PokeApi" parent="Base.Theme.PokeApi" />
+
+
+
+<!--    &lt;!&ndash; Custom SearchBar theme for List Fragment &ndash;&gt;-->
+<!--    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">-->
+<!--        &lt;!&ndash; Gets rid of the search icon &ndash;&gt;-->
+<!--        <item name="searchIcon">@drawable/ic_baseline_search_24</item>-->
+<!--        &lt;!&ndash; Gets rid of the "underline" in the text &ndash;&gt;-->
+<!--        <item name="queryBackground">@color/pokemon_dark_red</item>-->
+<!--        &lt;!&ndash; Gets rid of the search icon when the SearchView is expanded &ndash;&gt;-->
+<!--        <item name="searchHintIcon">@null</item>-->
+<!--        &lt;!&ndash; The hint text that appears when the user has not typed anything &ndash;&gt;-->
+<!--        <item name="queryHint">@string/search_hint</item>-->
+
+
+<!--    </style>-->
+
+<!--    &lt;!&ndash; Custom splash theme &ndash;&gt;-->
+<!--    <style name="splashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        <item name="android:windowBackground">@drawable/splash</item>-->
+<!--        <item name="android:statusBarColor">@color/pokemon_yellow</item>-->
+<!--    </style>-->
+
+<!--    &lt;!&ndash;- Dialog Theme &ndash;&gt;-->
+<!--    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">-->
+<!--        <item name="android:background">@color/pokemon_card_color_dark</item>-->
+<!--        <item name="android:buttonBarButtonStyle">@style/MyButtonsStyle</item>-->
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+<!--    </style>-->
+<!--    <style name="MyButtonsStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">-->
+
+<!--    </style>-->
+
+<!--    <string name="search_hint">Search for Pokemon by name..</string>-->
+
 </resources>

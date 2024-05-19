@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 
 //    //Room
-//    kotlin("kapt")
+    kotlin("kapt")
 //    id("androidx.navigation.safeargs.kotlin")
 //
 //    //parcelize for Parcelable (optional)
@@ -97,9 +97,9 @@ dependencies {
 //    implementation("com.google.dagger:hilt-android:$hiltVersion")
 //    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
 //
-//    // Glide
-//    implementation("com.github.bumptech.glide:glide:$glideVersion")
-//    kapt("com.github.bumptech.glide:compiler:$glideVersion")
+    // Glide
+    implementation("com.github.bumptech.glide:glide:$glideVersion")
+    kapt("com.github.bumptech.glide:compiler:$glideVersion")
 //
 //    // Circular Imgview
 //    implementation("com.mikhaellopez:circularimageview:4.2.0")
